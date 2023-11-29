@@ -1,0 +1,25 @@
+.wrapper {
+  max-width: 70rem;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  display: grid;
+  grid-template-columns: 256px 1fr;
+  gap: 2rem;
+  /* forçar a sidebar a ficar menor */
+  align-items: flex-start;
+}
+
+@media(max-width: 768px) {
+  /* Regrinha para a responsividade, quando utilizando rem
+    16 -> 100%
+    14 -> x
+    x = 87.5%
+  */
+  html {
+    font-size: 87,5%;
+  }
+
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+}
