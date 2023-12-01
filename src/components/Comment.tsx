@@ -28,7 +28,7 @@ export function Comment({ content, onDeleteComment }: CommentProps) {
         <div className={styles.comment}>
             <Avatar
                 hasBorder={false}
-                img="https://avatars.githubusercontent.com/u/76964434?v=4" 
+                src="https://avatars.githubusercontent.com/u/76964434?v=4" 
                 alt="Avatar usuário"
             />
 
